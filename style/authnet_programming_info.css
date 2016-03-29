@@ -1,0 +1,7 @@
+.api-profile-image {
+    width: 100px;
+    height: 100px;
+    float: left;
+    border: 1px solid #eee;
+    border-radius: 3px;
+}
