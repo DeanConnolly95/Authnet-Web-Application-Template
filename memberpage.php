@@ -15,7 +15,6 @@ require('layout/header.php');
             <div class="row bgimg1">
                 <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
                     <h2>Welcome, <?php echo $_SESSION['username']; ?>.</h2>
-                    <p class="text-primary">Here's your newsfeed.</p>
                     <hr>
                 </div>
             </div>
@@ -37,16 +36,16 @@ require('layout/header.php');
                 <div class="col-md-9">
                     <div id="myTabContent" class="tab-content">
                         <div class="tab-pane fade active in" id="newsfeed">
-                            <h1>Newsfeed</h1>
+                            <?php include="user_components/newsfeed.php"; ?>
                         </div>
                         <div class="tab-pane fade" id="profile">
-                            <h1>Profile</h1>
+                            <?php include="user_components/profile.php"; ?>
                         </div>
                         <div class="tab-pane fade" id="messages">
-                            <h1>Messages</h1>
+                            <?php include="user_components/messages.php"; ?>
                         </div>
                         <div class="tab-pane fade" id="settings">
-                            <h1>Settings</h1>
+                            <?php include="user_components/settings.php"; ?>
                         </div>
                     </div>
 
@@ -54,6 +53,7 @@ require('layout/header.php');
             </div>
         </div>
         <script src="scripts/bootstrap-datepicker.js"></script>
+        <script src="scripts/hipster-cards.js"></script>
         <script src="scripts/bootstrap-select.js"></script>
         <script src="scripts/bootstrap.js"></script>
         <script src="scripts/bootstrap.min.js"></script>
