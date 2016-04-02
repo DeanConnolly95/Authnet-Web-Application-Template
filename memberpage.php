@@ -36,29 +36,30 @@ require('layout/header.php');
                 <div class="col-md-9">
                     <div id="myTabContent" class="tab-content">
                         <div class="tab-pane fade active in" id="newsfeed">
-                            <?php include="user_components/newsfeed.php"; ?>
+                            <?php include "user_components/newsfeed.php"; ?>
                         </div>
                         <div class="tab-pane fade" id="profile">
-                            <?php include="user_components/profile.php"; ?>
+                            <?php include "user_components/profile.php"; ?>
                         </div>
                         <div class="tab-pane fade" id="messages">
-                            <?php include="user_components/messages.php"; ?>
+                            <?php include "user_components/messages.php"; ?>
                         </div>
                         <div class="tab-pane fade" id="settings">
-                            <?php include="user_components/settings.php"; ?>
+                            <?php include "user_components/settings.php"; ?>
                         </div>
                     </div>
 
                 </div>
             </div>
         </div>
-        <script src="scripts/bootstrap-datepicker.js"></script>
-        <script src="scripts/hipster-cards.js"></script>
-        <script src="scripts/bootstrap-select.js"></script>
-        <script src="scripts/bootstrap.js"></script>
-        <script src="scripts/bootstrap.min.js"></script>
-        <script src="scripts/jquery-1.10.2.js"></script>
         <?php 
-//include header template
-require('layout/footer.php'); 
+//include footer template
+include('layout/footer.php'); 
 ?>
+
+            <script src="scripts/bootstrap-datepicker.js"></script>
+            <script src="scripts/hipster-cards.js"></script>
+            <script src="scripts/bootstrap-select.js"></script>
+            <script src="scripts/bootstrap.js"></script>
+            <script src="scripts/bootstrap.min.js"></script>
+            <script src="scripts/jquery-1.10.2.js"></script>
